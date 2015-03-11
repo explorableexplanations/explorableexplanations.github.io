@@ -1,9 +1,9 @@
-/*@import url(http://fonts.googleapis.com/css?family=Raleway:400,200);*/
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300);
 
 body {
 	margin: 0;
 	font-family: Raleway;
-	font-weight: 200;
+	font-weight: 300;
 	font-size: 20px;
 }
 
