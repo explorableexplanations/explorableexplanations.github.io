@@ -23,7 +23,7 @@ body{
 	background: #fff;
 	color:#000;
 	margin:0;
-	font-family: "Open Sans";
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	font-size: 22px;
 	font-weight: 100;
 }
