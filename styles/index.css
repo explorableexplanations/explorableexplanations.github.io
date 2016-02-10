@@ -1,0 +1,182 @@
+/** Font Faces**/
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 300;
+	src: url(font/OpenSans-Regular.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 100;
+	src: url(font/OpenSans-Light.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: url(font/OpenSans-Bold.ttf) format('truetype');
+}
+
+/** Body **/
+body{
+	background: #fff;
+	color:#000;
+	margin:0;
+	font-family: "Open Sans";
+	font-size: 22px;
+	font-weight: 100;
+}
+b{
+	font-weight: 700;
+}
+
+/** SPLASH **/
+#splash{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+#splash:before{
+	content: "";
+	display: block;
+	padding-top: 40%; 	/* initial ratio of 1:1*/
+}
+#splash > iframe, #splash > svg{
+	position:  absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+#splash > iframe{
+	width:100%;
+	height:100%;
+	background: #222233;
+	border:none;
+}
+#splash > svg{
+	pointer-events: none;
+}
+/* sometimes the css messes up and makes
+a weird-looking line, so, cover it up */
+#splash_fixer{
+	width: 100%;
+    height: 2px;
+    background: #fff;
+    position: relative;
+    top: -1;
+}
+
+/** WORDS **/
+#words{
+	width: calc(100% - 40px);
+	max-width:640px;
+	padding: 0 20px;
+	margin: 40px auto 100px auto;
+	text-align: justify;
+	line-height: 1.5em;
+}
+#words h2{
+	text-align: left;
+	font-weight: 100;
+	font-size: 42px;
+	margin: 60px 0 0px 0;
+	line-height: 1em;
+}
+#words .gallery{
+	width:100%;
+	margin-bottom: 35px;
+}
+#words .gallery > a{
+	text-decoration: none;
+}
+#words .gallery > a > div{
+	margin-bottom: 20px;
+	text-align: center;
+	font-size:16px;
+	font-weight: normal;
+	color: #999;
+    line-height: 1.3em;
+
+	-webkit-transition: color 0.2s;
+	-moz-transition: color 0.2s;
+	-o-transition: color 0.2s;
+	transition: color 0.2s;
+}
+#words .gallery > a > div > img{
+	width:100%;
+	margin-bottom: 5px;
+	opacity: 0.85;
+
+	-webkit-transition: opacity 0.2s;
+	-moz-transition: opacity 0.2s;
+	-o-transition: opacity 0.2s;
+	transition: opacity 0.2s;
+}
+#words .gallery > a:hover > div{
+	color: #444;
+}
+#words .gallery > a:hover > div > img{
+	opacity: 1.0;
+}
+#words .extra{
+	text-align: center;
+    /*font-weight: normal;*/
+    font-size: 18px;
+    line-height: 1.2em;
+    margin-bottom: 40px;
+}
+#words a.button{
+	text-decoration: none;
+	width:250px;
+	height:55px;
+	display: block;
+	margin:0 auto;
+}
+#words a.button > div{
+	width:230px;
+	height:35px;
+	padding:10px 10px;
+	font-size: 30px;
+	margin:0 auto;
+	background: #555566;
+	color: #aaaabb;
+	text-align: center;
+	border-radius: 15px;
+
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+#words a.button:hover > div{
+	background: #666677;
+	color: #bbbbcc;
+}
+
+
+/** FOOTER **/
+#footer{
+	width:100%;
+	height:270px;
+	background: #222233;
+	overflow: hidden;
+}
+#footer > div{
+	color: #fff;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 18px;
+}
+#footer > div a{
+	color:#777788;
+}
+ul.share-buttons{
+	list-style: none;
+	padding: 0;
+}
+ul.share-buttons li{
+	display: inline;
+}
+
