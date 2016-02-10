@@ -1,3 +1,3 @@
-![](http://i.imgur.com/QclLBLT.png)
+![](http://explorableexplanations.com/social/thumbnail.png)
 
 [explorableexplanations.com](http://explorableexplanations.com)

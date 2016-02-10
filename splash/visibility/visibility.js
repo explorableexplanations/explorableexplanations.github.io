@@ -307,8 +307,8 @@ var Mouse = {
 	y: 30
 };
 document.body.onmousemove = function(event){
-	var scaleX = model.node.clientWidth/600;
-	var scaleY = model.node.clientHeight/240;
+	var scaleX = document.body.clientWidth/600;
+	var scaleY = document.body.clientHeight/240;
 	Mouse.x = event.clientX/scaleX;
 	Mouse.y = event.clientY/scaleY;
 };
