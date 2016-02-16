@@ -312,3 +312,9 @@ document.body.onmousemove = function(event){
 	Mouse.x = event.clientX/scaleX;
 	Mouse.y = event.clientY/scaleY;
 };
+document.body.ontouchmove = function(event){
+	var scaleX = document.body.clientWidth/600;
+	var scaleY = document.body.clientHeight/240;
+	Mouse.x = event.changedTouches[0].clientX/scaleX;
+	Mouse.y = event.changedTouches[0].clientY/scaleY;
+};
