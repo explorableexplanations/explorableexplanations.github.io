@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body style="margin:0">	</body>
+</html>
+
+<script src="../Mouse.js"></script>
+<script src="../Circle.js"></script>
+<script>
+var NUMS = [0, 1, 2];
+var OPACITIES = [0.0, 0.05, 0.3];
+var mouseRadius = 200;
+var mouseRadius2 = mouseRadius*mouseRadius;
+
+var randomChooser = function(){
+	if(Math.random()<0.999){
+		if(Math.random()<0.8){
+			return 0; // empty
+		}else{
+			return 1; // mobile
+		}
+	}
+	return 2; // seed
+};
+var updateFn = function(grid, x, y){
+
+	var cell = grid[y][x];
+
+	// If mobile, "walk around" until you hit a seed. Then, become a seed.
+	// from: https://www.hermetic.ch/pca/da.htm
+
+	var neighbors = _getNeighbors(grid, x, y);
+	if(cell.state==1){
+
+		// Any seed neighbors? Become seed!
+		var count = 0;
+		for(var i=0; i<neighbors.length; i++){
+			if(neighbors[i].state==2) count++;
+		}
+		if(count>0){
+			cell.nextState = 2; // I'm a seed now! 
+			return;
+		}
+
+		// Walk around
+		var spots = neighbors.filter(function(n){
+			return n.state==0; // empty spot
+		});
+		if(spots.length>0){
+			var spot = spots[Math.floor(Math.random()*spots.length)];
+			spot.nextState = cell.state; // "walk" to there
+			cell.nextState = 0; // leave empty in THIS spot
+		}
+
+	}
+
+	// Empty, and all neighbors empty? become mobile!
+	if(cell.state==0){
+
+		var count = 0;
+		for(var i=0; i<neighbors.length; i++){
+			if(neighbors[i].state==0) count++;
+		}
+		if(count==8){ // ALL NEIGHBORS EMPTY
+			if(Math.random()<0.005){
+				cell.nextState = 1; // ...with a certain probability.
+			}
+		}
+	}
+
+};
+</script>
+<script src="ca.js"></script>

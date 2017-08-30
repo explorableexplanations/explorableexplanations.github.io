@@ -1,0 +1,129 @@
+[
+
+	/////////////////////////////
+	// THE EXPLORABLE TAGS //////
+	/////////////////////////////
+	
+	{
+		"id": "philosophy",
+		"name": "philosophy",
+		"color": "#A0522D",
+		"explorable": true
+	},
+	{
+		"id": "math",
+		"name": "math",
+		"color": "hsl(220, 70%, 56%)",
+		"explorable": true
+	},
+	{
+		"id": "physics",
+		"name": "physics",
+		"color": "hsl(210, 53%, 70%)",
+		"explorable": true
+	},
+	{
+		"id": "chemistry",
+		"name": "chemistry",
+		"color": "#4B0082",
+		"explorable": true
+	},
+	{
+		"id": "biology",
+		"name": "biology",
+		"color": "hsl(90, 100%, 36%)",
+		"explorable": true
+	},
+	{
+		"id": "psychology",
+		"name": "psychology",
+		"color": "#FF69B4",
+		"explorable": true
+	},
+	{
+		"id": "social",
+		"name": "social science",
+		"color": "#FFA500",
+		"explorable": true
+	},
+	{
+		"id": "art",
+		"name": "art",
+		"color": "#ff4040",
+		"explorable": true
+	},
+	{
+		"id": "civics",
+		"name": "civics",
+		"color": "#ffcc00",
+		"explorable": true
+	},
+	{
+		"id": "journalism",
+		"name": "journalism",
+		"color": "hsl(270, 100%, 47%)",
+		"explorable": true
+	},
+	{
+		"id": "economics",
+		"name": "economics",
+		"color": "hsl(90, 100%, 20%)",
+		"explorable": true
+	},
+	{
+		"id": "programming",
+		"name": "programming",
+		"color": "#E91E63",
+		"explorable": true
+	},
+	{
+		"id": "earth",
+		"name": "earth science",
+		"color": "#0dd4ba",
+		"explorable": true
+	},
+	{
+		"id": "meta",
+		"name": "meta",
+		"color": "#222",
+		"explorable": true
+	},
+	{
+		"id": "misc",
+		"name": "misc",
+		"color": "#aaa",
+		"explorable": true
+	},
+
+
+	/////////////////////////////
+	// THE NON-EXPLORABLE TAGS //
+	/////////////////////////////
+
+	{
+		"id": "tools",
+		"name": "tools",
+		"color": "#ff4040",
+		"explorable": false
+	},
+	{
+		"id": "tutorials",
+		"name": "tutorials",
+		"color": "hsl(90, 100%, 40%)",
+		"explorable": false
+	},
+	{
+		"id": "reading",
+		"name": "further reading",
+		"color": "hsl(220, 70%, 56%)",
+		"explorable": false
+	},
+	{
+		"id": "faq",
+		"name": "frequently asked questions",
+		"color": "#222",
+		"explorable": false
+	}
+
+
+]

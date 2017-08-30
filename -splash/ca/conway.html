@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body style="margin:0">	</body>
+</html>
+
+<script src="../Circle.js"></script>
+<script src="../Mouse.js"></script>
+<script>
+var NUMS = [0, 1];
+var OPACITIES = [0.0, 0.3];
+var mouseRadius = 200;
+var mouseRadius2 = mouseRadius*mouseRadius;
+
+var updateFn = function(grid, x, y){
+
+	var cell = grid[y][x];
+
+	// Get neighbors, count num of alive
+	var neighbors = _getNeighbors(grid, x, y);
+	var count = 0;
+	for(var i=0; i<neighbors.length; i++){
+		if(neighbors[i].state==1) count++;
+	}
+
+	// live: < 2 neighbors -> die
+	// live: > 3 neighbors -> die
+	// dead: = 3 neighbors -> live
+	if(cell.state==1){
+		if(count<2) cell.nextState=0; // die
+		if(count>3) cell.nextState=0; // die
+	}else{
+		if(count==3) cell.nextState=1; // ALIVE
+	}
+
+};
+</script>
+<script src="ca.js"></script>

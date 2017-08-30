@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<body style="margin:0"></body>
+<script src="d3.v3.min.js"></script>
+<script src="topojson.v1.min.js"></script>
+<script src="../Circle.js"></script>
+<script src="../Mouse.js"></script>
+<script>
+
+window.noOuterCircle = true;
+
+var width = window.innerWidth,
+    height = window.innerHeight;
+
+var projection = d3.geo.orthographic()
+    .scale(250)
+    .translate([width / 2, height / 2])
+    .clipAngle(90);
+
+var path = d3.geo.path()
+    .projection(projection);
+
+var λ = d3.scale.linear()
+    .domain([0, width])
+    .range([-180, 180]);
+
+var φ = d3.scale.linear()
+    .domain([0, height])
+    .range([90, -90]);
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+var ZE_MOUSE = [0,0];
+var ZE_MOUSE_NOW = null;
+var ZE_MOUSE_START = null;
+var ZE_DIFF = [0,0];
+svg.on("mousedown", function() {
+    ZE_MOUSE_START = d3.mouse(this);
+    ZE_MOUSE_NOW = d3.mouse(this);
+    ZE_DIFF[0] = 0;
+    ZE_DIFF[1] = 0;
+});
+svg.on("mousemove", function() {
+    if(ZE_MOUSE_START){
+        ZE_MOUSE_NOW = d3.mouse(this);
+        ZE_DIFF[0] = ZE_MOUSE_NOW[0]-ZE_MOUSE_START[0];
+        ZE_DIFF[1] = ZE_MOUSE_NOW[1]-ZE_MOUSE_START[1];
+    }
+});
+svg.on("mouseup", function() {
+    ZE_MOUSE_START = null;
+    ZE_MOUSE[0] += ZE_DIFF[0];
+    ZE_MOUSE[1] += ZE_DIFF[1];
+    ZE_DIFF[0] = 0;
+    ZE_DIFF[1] = 0;
+});
+
+function updateSVG(){
+    svg.selectAll("path").attr("d", path);
+}
+
+var origin = [0, -30],
+    velocity = [.010, 0],
+    t0 = Date.now();
+
+d3.json("world-110m.json", function(error, world) {
+  if (error) throw error;
+
+  svg.append("path")
+      .datum(topojson.feature(world, world.objects.land))
+      .attr("class", "land")
+      .attr("fill", "rgba(255,255,255,0.5)")
+      .attr("d", path);
+
+    d3.timer(function() {
+        var dt = Date.now() - t0;
+        projection.rotate([
+            velocity[0] * dt + origin[0] + (ZE_MOUSE[0]+ZE_DIFF[0])*0.50,
+            velocity[1] * dt + origin[1] - (ZE_MOUSE[1]+ZE_DIFF[1])*0.25
+        ]);
+        updateSVG();
+    });
+
+});
+
+/////////////////////////////////////////
+
+// Canvas!
+var canvas = document.createElement("canvas");
+var w = window.innerWidth;
+var h = window.innerHeight;
+canvas.width = w*2;
+canvas.height = h*2;
+canvas.style.width = w+"px";
+canvas.style.height = h+"px";
+canvas.style.position = "absolute";
+canvas.style.top = 0;
+canvas.style.left = 0;
+canvas.style.pointerEvents = "none";
+document.body.appendChild(canvas);
+
+var ctx = canvas.getContext("2d");
+var draw = function(){
+    // RAF
+    window.requestAnimationFrame(draw);
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    _drawCircle(ctx, 200);
+};
+window.requestAnimationFrame(draw);
+
+</script>

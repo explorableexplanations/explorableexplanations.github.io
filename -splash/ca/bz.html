@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body style="margin:0">	</body>
+</html>
+
+<script src="../Mouse.js"></script>
+<script src="../Circle.js"></script>
+<script>
+var NUMS = [0, 1, 2];
+var OPACITIES = [0.0, 0.15, 0.3];
+var mouseRadius = 200;
+var mouseRadius2 = mouseRadius*mouseRadius;
+
+var updateFn = function(grid, x, y){
+
+	var cell = grid[y][x];
+
+	// Screw it, use these rules
+	// http://ncase.me/emoji-prototype/?remote=-K71iWhftjtOIfx6b2Fo
+
+	var neighbors = _getNeighbors(grid, x, y);
+
+	// If 0, move to a random 1 and leave behind a 0.
+	// If 1, move to a random 2 and leave behind a 1.
+	// If 2, move to a random 0 and leave behind a 2.
+	
+	var spots = neighbors.filter(function(n){
+		return n.state==((cell.state+1)%3);
+	});
+	if(spots.length>0){
+		var spot = spots[Math.floor(Math.random()*spots.length)];
+		spot.nextState = cell.state;
+	}
+	return;
+
+
+};
+</script>
+<script src="ca.js"></script>

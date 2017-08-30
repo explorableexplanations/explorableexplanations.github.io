@@ -1,3 +1,5 @@
-![](http://explorableexplanations.com/social/thumbnail.png)
+To add a new explorable, edit `-data/explorables.json`
 
-[explorableexplanations.com](http://explorableexplanations.com)
+Editing the *pages*, however, is a bit more involved, and requires running that build script
+
+"License": Creative Commons Zero / Public Domain

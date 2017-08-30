@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<base href='/'>
+	<title>FAQ | Explorable Explanations</title>
+
+	<!-- Meta -->
+	<meta name="viewport" content="width=640, initial-scale=1">
+
+	<!-- Social Card Nonsense -->
+	<meta itemprop="name" content="FAQ | Explorable Explanations">
+	<meta itemprop="description" content="a hub for learning through play">
+	<meta itemprop="image" content="http://explorabl.es/-sharing/index.png">
+
+	<!-- Social Card Nonsense: Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="FAQ | Explorable Explanations">
+	<meta name="twitter:description" content="a hub for learning through play">
+	<meta name="twitter:image" content="http://explorabl.es/-sharing/index.png">
+
+	<!-- Social Card Nonsense: Facebook -->
+	<meta property="og:title" content="FAQ | Explorable Explanations">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://explorabl.es/">
+	<meta property="og:image" content="http://explorabl.es/-sharing/index.png">
+	<meta property="og:description" content="a hub for learning through play">
+
+	<!-- Style -->
+	<link rel="stylesheet" type="text/css" href="-css/page.css">
+	<style>#splash_title{ font-size: 110px; line-height: 1em; margin-top: 60px; }@media (max-width: 1050px){ #splash_title{ width:640px; margin: 50px auto; font-size: 80px; } }</style>
+
+</head>
+<body>
+
+	<noscript>
+		Sorry! Explorable Explanations needs JavaScript.
+		Don't worry, there's no tracking code or anything creepy like that,
+		the JS is just so I can dynamically load shtuff.
+		Thanks!
+	</noscript>
+
+	<!-- Splash Page! -->
+	<div id="splash" style='background:#222;'>
+		<iframe id="splash_iframe" src="/-splash/boids/boids.html" scrolling="no"></iframe>
+		<div id="splash_title"><b>F</b>REQUENTLY <b>A</b>SKED<br><b>Q</b>UESTIONS</div>
+		<div id="splash_arrow">
+			<div></div><div></div><div></div><div></div>
+		</div>
+		<a href='/' id='splash_home'></a>
+	</div>
+	
+	<!-- Words & Gallery! -->
+	<div id="words">
+		<div id="intro"><p><strong>Are these questions actually asked, or are these just questions you want to answer?</strong></p><p>...next question.</p><p><strong>So what <em>is</em> an Explorable Explanation?</strong></p><p>Haha, I have no idea.</p><p>But seriously: since it&#39;s early days, we&#39;re keeping the definition pretty open! This website contains everything from videogames, to sandbox toys, to interactive graphics/articles/textbooks.</p><p>In short, by &quot;explorable explanation&quot; we mean something that 1) teaches something, and 2) is more interactive than a boring ol&#39; quiz with only one right answer.</p><p><strong>Ooh, this is like &quot;gamification&quot;, right?</strong></p><p>[sharp inhale]</p><p>hnnnnnnnnnngh okay I don&#39;t want to police other peoples&#39; use of words, but my problem with &quot;gamification&quot; is that people usually use it to refer to the <em>worst kind</em> of game design: the &quot;do some task and get some reward&quot; skinner box.</p><p>Those are called &quot;extrinsic rewards&quot;, and while they&#39;re good for motivating people to do boring, routine tasks, they&#39;re <em>incredibly damaging</em> for creativity &amp; learning. Better instead to tap into &quot;intrinsic rewards&quot;: peoples&#39; inner sense of curiosity, mastery, autonomy, expression, purpose.</p><p><em>That&#39;s</em> what Explorable Explanations aims to do. Not wrapping stale school material in gold stars and high scores.</p><p><strong>Are the Featured (★) explorables the best ones?</strong></p><p>Not necessarily! The ones we&#39;re featuring are just the ones we think would serve as <em>the best introduction</em> to what play can do for learning. So if there&#39;s a thing that&#39;s otherwise amazing &amp; educational, but only uses minimal interaction (or isn&#39;t free, or requires a download), we maaaaay not pick it as a Featured (★) explorable. Maybe.</p><p>Long story short: it&#39;s pretty freakin&#39; arbitrary.</p><p><strong>How do I get started making my own explorable?</strong></p><p>You&#39;ve already started! Browse this site for examples of explorables to inspire you. Check out the <a href='/tools'>tools</a> and <a href='/tutorials'>tutorials</a> pages, to learn how to make explorables. And if you want to get a deeper sense for <em>why</em> play matters so much to learning, check out the <a href='/reading'>further reading</a>!</p><p><strong>I&#39;ve got a question / a critique / a recommendation for an explorable to add to this site!</strong></p><p>Great! Ping us at <script> document.write("<n uers='znvygb:rkcybenoyr.rkcynangvbaf@tznvy.pbz' ery='absbyybj'>rkcybenoyr.rkcynangvbaf@tznvy.pbz</n>".replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<'Z'?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);})); </script></p><p>We&#39;re all terrible at email, but we&#39;ll try to check it as much as our respective work schedules allow! Hey, I warned you about us being a disorganized &quot;movement&quot;.</p></div>
+		<div id="gallery">
+			<div style="text-align:center;font-family:monospace;">[loading...]</div>
+		</div>
+	</div>
+
+	<!-- FOOTER: Navigate to other parts of the site -->
+	<div id="footer_nav_container">
+		<div id="footer_nav">
+			<b>Want to learn about a specific topic?</b>
+			You can also browse Explorable Explanations by subject matter:
+			<br>
+			<div id="tags_explorables"></div>
+			<br>
+			<b>Want to make your own explorable explanation?</b>
+			Here’s some stuff to help you get started!
+			<br>
+			<div id="tags_not_explorables"></div>
+			<br>
+			If you’re into that whole “internet” fad that’s all the rage these days, you can also find us on...
+			<br>
+			[twitter] [reddit]
+		</div>
+	</div>
+	
+	<!-- Site credits -->
+	<div id="footer_credits_container">
+		<div id="footer_credits">
+			site credits go here, i guess
+		</div>
+	</div>
+
+</body>
+</html>
+
+<!-- Scripts! -->
+<script src="-js/q.js"></script>
+<script src="-js/pegasus.js"></script>
+<script src="-js/helpers.js"></script>
+<script src="-js/page.js"></script>
