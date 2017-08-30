@@ -2,8 +2,8 @@
 
 	// Singleton
 	var Mouse = {
-		x: window.innerWidth/2,
-		y: window.innerHeight/2,
+		x: document.body.clientWidth/2,
+		y: document.body.clientHeight/2,
 		pressed: false
 	};
 	exports.Mouse = Mouse;
@@ -37,6 +37,7 @@
 	document.body.addEventListener("touchmove",onTouchMove = function(event){
 		Mouse.x = event.changedTouches[0].clientX;
 		Mouse.y = event.changedTouches[0].clientY - window.pageYOffset;
+		event.preventDefault();
 	},false);
 
 

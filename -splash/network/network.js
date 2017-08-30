@@ -7,8 +7,8 @@ window.onload = function(){
 
 	// Canvas!
 	var canvas = document.createElement("canvas");
-	var w = window.innerWidth;
-	var h = window.innerHeight;
+	var w = document.body.clientWidth;
+	var h = document.body.clientHeight;
 	canvas.width = w*2;
 	canvas.height = h*2;
 	canvas.style.width = w+"px";
@@ -21,7 +21,7 @@ window.onload = function(){
 
 	// Create particles at a certain density
 	var density = 1/Math.pow(80,2);
-	var area = window.innerWidth*(window.innerHeight+100*2);
+	var area = document.body.clientWidth*(document.body.clientHeight+100*2);
 	var count = Math.floor(density*area);
 
 	// Placement: just pick random spots that aren't within a certain radius of others.
@@ -107,15 +107,15 @@ var imageHeight = 100;
 var _x = 0;
 var _notRandomX = function(){
 	_x += imageWidth*4;
-	if(_x>window.innerWidth*2) _x-=window.innerWidth*2;
+	if(_x>document.body.clientWidth*2) _x-=document.body.clientWidth*2;
 	return _x;
 };
 
 function Particle(x,y){
 	
 	var self = this;
-	var w = window.innerWidth*2;
-	var h = window.innerHeight*2;
+	var w = document.body.clientWidth*2;
+	var h = document.body.clientHeight*2;
 
 	self.flip = Math.random()<0.5;
 	

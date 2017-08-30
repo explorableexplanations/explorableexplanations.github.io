@@ -17,6 +17,8 @@
 }
 
 /** Body **/
+html{
+}
 body{
 	min-width: 600px;
 	background: #fff;
@@ -29,6 +31,15 @@ body{
 }
 b, strong{
 	font-weight: 700;
+}
+
+@media (max-width: 641px){
+	body{
+		font-size: 40px;
+	}
+	#intro, #footer_nav_container{
+		text-align: left !important;
+	}
 }
 
 /*******************
@@ -168,7 +179,7 @@ b, strong{
 }
 #gallery #entry #description{
 	color: #909090;
-	font-size: 22px;
+	font-size: 0.92em;
 	line-height: 1.3em;
 }
 #gallery[size=big]{
@@ -197,12 +208,12 @@ b, strong{
 }
 #gallery[size=small] #entry:hover #thumb{}
 #gallery[size=small] #entry #name{
-	font-size: 22px;
+	font-size: 0.92em;
 	margin-top: 3px;
 	margin-bottom: 5px;
 }
 #gallery[size=small] #entry #description{
-	font-size: 20px;
+	font-size: 0.83em;
 }
 #gallery[size=small] .divider{
 	display: block;
@@ -219,6 +230,7 @@ b, strong{
 	font-size: 30px;
 	text-align: center;
 	font-weight: 100;
+	line-height: 40px;
 	
 	width: 300px;
 	height: 40px;
@@ -261,10 +273,10 @@ b, strong{
 	transition: top 0.1s ease-in-out;
 	display: inline-block;
 	color: #fff;
-	border-radius: 20px;
+	border-radius: 100px;
 	padding: 0 15px;
 	margin: 5px;
-	font-size: 20px;
+	font-size: 0.83em;
 	font-weight: 700;
 	text-decoration: none;
 }
@@ -272,8 +284,8 @@ b, strong{
 	top:-2px;
 }
 .tag[small=yes]{
-	font-size: 18px;
-	line-height: 25px;
+	font-size: 0.75em;
+	line-height: 1.2em;
 	padding: 0 10px;
 	font-weight: 100;
 	margin: 1px;
@@ -293,14 +305,7 @@ b, strong{
 	max-width: calc(100% - 50px);
 	width:600px;
 	color: #fff;
-	font-size: 17px;
+	font-size: 0.71em;
 	text-align: center;
 }
-
-
-
-
-
-
-
 

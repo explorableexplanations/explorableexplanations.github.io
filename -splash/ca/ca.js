@@ -41,8 +41,8 @@ window.onload = function(){
 
 	// Canvas!
 	var canvas = document.createElement("canvas");
-	var w = window.innerWidth;
-	var h = window.innerHeight;
+	var w = document.body.clientWidth;
+	var h = document.body.clientHeight;
 	canvas.width = w*2;
 	canvas.height = h*2;
 	canvas.style.width = w+"px";
@@ -51,8 +51,8 @@ window.onload = function(){
 
 	// A grid
 	var tileSize = 20;
-	var gridWidth = Math.ceil(window.innerWidth*2/tileSize);
-	var gridHeight = Math.ceil(window.innerHeight*2/tileSize);
+	var gridWidth = Math.ceil(document.body.clientWidth*2/tileSize);
+	var gridHeight = Math.ceil(document.body.clientHeight*2/tileSize);
 	var grid = _createGrid(gridWidth, gridHeight, NUMS);
 
 	// Update

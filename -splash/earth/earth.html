@@ -1,6 +1,10 @@
 <!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" type="text/css" href="../splash.css"></head>
 <meta charset="utf-8">
-<body style="margin:0"></body>
+<body></body>
+</html>
+
 <script src="d3.v3.min.js"></script>
 <script src="topojson.v1.min.js"></script>
 <script src="../Circle.js"></script>
@@ -9,8 +13,8 @@
 
 window.noOuterCircle = true;
 
-var width = window.innerWidth,
-    height = window.innerHeight;
+var width = document.body.clientWidth,
+    height = document.body.clientHeight;
 
 var projection = d3.geo.orthographic()
     .scale(250)
@@ -89,8 +93,8 @@ d3.json("world-110m.json", function(error, world) {
 
 // Canvas!
 var canvas = document.createElement("canvas");
-var w = window.innerWidth;
-var h = window.innerHeight;
+var w = document.body.clientWidth;
+var h = document.body.clientHeight;
 canvas.width = w*2;
 canvas.height = h*2;
 canvas.style.width = w+"px";

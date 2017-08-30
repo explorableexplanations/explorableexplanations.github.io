@@ -1,5 +1,5 @@
-var w = window.innerWidth*2;
-var h = window.innerHeight*2;
+var w = document.body.clientWidth*2;
+var h = document.body.clientHeight*2;
 
 // module aliases
 var Engine = Matter.Engine,

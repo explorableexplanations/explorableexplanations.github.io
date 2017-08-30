@@ -311,14 +311,15 @@ var _resize = function(){
 
 	if(!pageIsIndex){
 		var gallery = $("#gallery");
-		gallery.setAttribute("size", (window.innerWidth<890) ? "big" : "small");
+		gallery.setAttribute("size", (document.body.clientWidth<890) ? "big" : "small");
 	}
 
 };
 window.addEventListener("resize", _resize, false);
 
 // SCROLL
+var splash_iframe = $("#splash_iframe");
 window.onscroll = function(){
 	var scrollY = window.pageYOffset;
-	splash_iframe.style.top = (scrollY/2)+"px";
+	splash_iframe.style.top = (scrollY*0.7)+"px";
 };

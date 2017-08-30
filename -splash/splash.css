@@ -1,0 +1,10 @@
+html, body{
+	width: 100%;
+	height: 100%;
+}
+html{
+	touch-action: none;
+}
+body{
+	margin:0;
+}

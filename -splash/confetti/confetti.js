@@ -9,8 +9,8 @@ window.onload = function(){
 
 	// Canvas!
 	var canvas = document.createElement("canvas");
-	var w = window.innerWidth;
-	var h = window.innerHeight;
+	var w = document.body.clientWidth;
+	var h = document.body.clientHeight;
 	canvas.width = w*2;
 	canvas.height = h*2;
 	canvas.style.width = w+"px";
@@ -19,11 +19,11 @@ window.onload = function(){
 
 	// Create particles at a certain density
 	var density = 1/Math.pow(80,2);
-	var area = window.innerWidth*(window.innerHeight+100*2);
+	var area = document.body.clientWidth*(document.body.clientHeight+100*2);
 	var count = Math.floor(density*area);
 	for(var i=0; i<count; i++){
 		var x = _notRandomX();
-		var y = i*((window.innerHeight*2+200)/count);
+		var y = i*((document.body.clientHeight*2+200)/count);
 		particles.push(new Particle(x,y));
 	}
 
@@ -64,15 +64,15 @@ var image = new Image();
 image.src = imageSource;
 var _x = 0;
 var _notRandomX = function(){
-	_x += 100*4*(window.innerWidth/1280); //whatever
-	if(_x>window.innerWidth*2) _x-=window.innerWidth*2;
+	_x += 100*4*(document.body.clientWidth/1280); //whatever
+	if(_x>document.body.clientWidth*2) _x-=document.body.clientWidth*2;
 	return _x;
 };
 function Particle(x,y){
 	
 	var self = this;
-	var w = window.innerWidth*2;
-	var h = window.innerHeight*2;
+	var w = document.body.clientWidth*2;
+	var h = document.body.clientHeight*2;
 	self.x = x; //Math.random()*w;
 	self.y = y; //Math.random()*h;
 	var margin = 100;

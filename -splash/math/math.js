@@ -2,8 +2,8 @@ Math.TAU = Math.PI*2;
 
 window.noOuterCircle = true;
 
-var w = window.innerWidth;
-var h = window.innerHeight;
+var w = document.body.clientWidth;
+var h = document.body.clientHeight;
 
 var _makeCanvas = function(DO_NOT_APPEND){
 	var canvas = document.createElement("canvas");

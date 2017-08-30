@@ -8,8 +8,8 @@ window.onload = function(){
 
 	// Canvas!
 	var canvas = document.createElement("canvas");
-	var w = window.innerWidth;
-	var h = window.innerHeight;
+	var w = document.body.clientWidth;
+	var h = document.body.clientHeight;
 	canvas.width = w*2;
 	canvas.height = h*2;
 	canvas.style.width = w+"px";
@@ -18,7 +18,7 @@ window.onload = function(){
 
 	// Create boids at a certain density
 	var density = 1/Math.pow(50,2);
-	var area = window.innerWidth*window.innerHeight;
+	var area = document.body.clientWidth*document.body.clientHeight;
 	var count = Math.floor(density*area);
 	for(var i=0; i<count; i++) boids.push(new Boid());
 
@@ -55,8 +55,8 @@ var boids = [];
 function Boid(){
 
 	var self = this;
-	var w = window.innerWidth*2;
-	var h = window.innerHeight*2;
+	var w = document.body.clientWidth*2;
+	var h = document.body.clientHeight*2;
 	self.x = Math.random()*w;
 	self.y = Math.random()*h;
 	self.a = Math.random()*Math.TAU;
