@@ -254,7 +254,7 @@ b, strong{
 
 #footer_nav_container{
 	width: 100%;
-	padding: 50px 0;
+	padding: 30px 0 50px 0;
 	background: #f0f0f0;
 	text-align: justify;
 }
@@ -263,9 +263,9 @@ b, strong{
 	max-width: calc(100% - 50px);
 	width:640px;
 }
-#tags_explorables, #tags_not_explorables{
+.footer_buttons{
 	text-align:center;
-	margin-top: 1em;
+	padding-bottom: 1em;
 }
 .tag{
 	position: relative;
@@ -273,22 +273,34 @@ b, strong{
 	transition: top 0.1s ease-in-out;
 	display: inline-block;
 	color: #fff;
-	border-radius: 100px;
+	border-radius: 10px;
 	padding: 0 15px;
 	margin: 5px;
-	font-size: 0.83em;
-	font-weight: 700;
+	font-size: 1em;
+	/*font-weight: 700;*/
 	text-decoration: none;
+	line-height: 1.7em;
 }
 .tag:hover{
 	top:-2px;
 }
 .tag[small=yes]{
 	font-size: 0.75em;
-	line-height: 1.2em;
+	line-height: 1.4em;
 	padding: 0 10px;
 	font-weight: 100;
 	margin: 1px;
+	border-radius: 100px;
+	border: none;
+}
+.tag.rainbow{
+	font-size:1.5em;
+	color: #000;
+    background: #dd4040; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, hsl(0, 100%, 63%), hsl(30, 100%, 63%), hsl(60, 100%, 63%), hsl(90, 100%, 63%), hsl(120, 100%, 63%), hsl(180, 100%, 63%), hsl(240, 100%, 63%)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, hsl(0, 100%, 63%), hsl(30, 100%, 63%), hsl(60, 100%, 63%), hsl(90, 100%, 63%), hsl(120, 100%, 63%), hsl(180, 100%, 63%), hsl(240, 100%, 63%)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, hsl(0, 100%, 63%), hsl(30, 100%, 63%), hsl(60, 100%, 63%), hsl(90, 100%, 63%), hsl(120, 100%, 63%), hsl(180, 100%, 63%), hsl(240, 100%, 63%)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, hsl(0, 100%, 63%), hsl(30, 100%, 63%), hsl(60, 100%, 63%), hsl(90, 100%, 63%), hsl(120, 100%, 63%), hsl(180, 100%, 63%), hsl(240, 100%, 63%)); /* Standard syntax (must be last) */
 }
 
 /*******************
@@ -297,7 +309,7 @@ b, strong{
 
 #footer_credits_container{
 	width: 100%;
-	padding: 50px 0;
+	padding: 50px 0 75px 0;
 	background: #222222;
 }
 #footer_credits{
@@ -307,5 +319,11 @@ b, strong{
 	color: #fff;
 	font-size: 0.71em;
 	text-align: center;
+	line-height: 1.5em;
 }
-
+#footer_credits a{
+	color:#dd4040;
+}
+#footer_credits a:hover{
+	color:#ee5151;
+}

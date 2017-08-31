@@ -321,5 +321,5 @@ window.addEventListener("resize", _resize, false);
 var splash_iframe = $("#splash_iframe");
 window.onscroll = function(){
 	var scrollY = window.pageYOffset;
-	splash_iframe.style.top = (scrollY*0.7)+"px";
+	splash_iframe.style.top = (scrollY*0.65)+"px";
 };
