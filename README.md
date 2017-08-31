@@ -1,4 +1,4 @@
-#Explorable Explanations
+# Explorable Explanations
 
 **"License":** Dedicated to the public domain, with Creative Commons Zero.
 
@@ -16,7 +16,7 @@ With the help of [Amit Patel](http://www.redblobgames.com/),
 [Omar Rizwan](https://rsnous.com/) &
 [Toph Tucker](http://www.tophtucker.com/)
 
-If you'd like to suggest an addition or fix to the Explorables hub, GitHub issues aren't the best -- please instead email us at ![](https://i.imgur.com/HcMkZpM.png)
+If you'd like to suggest an addition or fix to the Explorables hub, GitHub issues aren't the best -- please instead email us at ![](https://i.imgur.com/HZtMFio.png)
 
 **And finally, a special thanks to my supporters [on Patreon!](https://www.patreon.com/ncase) <3**
 
