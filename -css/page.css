@@ -327,3 +327,23 @@ b, strong{
 #footer_credits a:hover{
 	color:#ee5151;
 }
+.sharing{
+	margin-top: 20px;
+}
+.sharing a{
+	display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+    border:1px solid #fff;
+    border-radius: 100px;
+    padding:5px;
+}
+.sharing a:hover{
+	background: rgba(255,255,255,0.3);
+}
+.sharing svg{
+	width:20px;
+	height:20px;
+	fill:#fff;
+}
