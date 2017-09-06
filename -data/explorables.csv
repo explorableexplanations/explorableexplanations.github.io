@@ -84,6 +84,10 @@
 "The Trading Game","like flappy bird, but with stock markets","https://www.bloomberg.com/features/2015-stock-chart-trading-game/","stocks.png","economics","",""
 "Exploring Histograms","a visual & interactive guide to histograms","http://tinlizzie.org/histograms/","histograms.png","math","","Aran Lunzer, Amelia McNamara"
 "Numbers at Play","a proof-of-concept for a new way to do math","https://www.khanacademy.org/research/reports/cantor","cantor.png","math, meta","yes","Scott Farrar, Andy Matuschak, May-Li Khoe"
+Line Intersection,illustration of the Bentley-Ottmann algrorithm,https://bl.ocks.org/1wheel/464141fe9b940153e636,http://bl.ocks.org/1wheel/raw/464141fe9b940153e636/9d0ed2a8191ab6f9ad6adae0b5e1a2b7692b043c/preview.png,math,,
+Convex Hulls,step through different ways of computing the convex hull,https://roadtolarissa.com/convex-hulls/,https://roadtolarissa.com/images/thumbnails/convex-hulls.png,math,,
+SVG Path Strings,explore how the browser draws shapes with numbers,https://roadtolarissa.com/blog/2015/02/22/svg-path-strings/,https://roadtolarissa.com/images/thumbnails/svg-path.png,programming,,
+Euclidea,interactive geometric puzzles,https://www.euclidea.xyz/,https://www.euclidea.xyz/images/euclidea/explore.gif
 "","","","","","",""
 "","","","","","",""
 "","","","","","",""
