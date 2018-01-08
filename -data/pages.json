@@ -486,13 +486,6 @@
 		<p><strong>How do I get started making my own explorable?</strong></p>
 
 		<p>You&#39;ve already started! Browse this site for examples of explorables to inspire you. Check out the <a href='/tools'>tools</a> and <a href='/tutorials'>tutorials</a> pages, to learn how to make explorables. And if you want to get a deeper sense for <em>why</em> play matters so much to learning, check out the <a href='/reading'>further reading</a>!</p>
-
-		<p><strong>I&#39;ve got a question / a critique / a recommendation for an explorable to add to this site!</strong></p>
-
-		<p style='overflow-wrap: break-word'>Great! Ping us at <script> document.write(\"<n uers='znvygb:rkcybenoyr.rkcynangvbaf@tznvy.pbz' ery='absbyybj'>rkcybenoyr.rkcynangvbaf@tznvy.pbz</n>\".replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<'Z'?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);})); </script></p>
-
-		<p>We&#39;re all terrible at email, but we&#39;ll try to check it as much as our respective work schedules allow! Hey, I warned you about us being a disorganized &quot;movement&quot;.</p>
-
 		",
 
 		"splash": "boids/boids.html",

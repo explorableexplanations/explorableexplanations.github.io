@@ -280,6 +280,7 @@ b, strong{
 	/*font-weight: 700;*/
 	text-decoration: none;
 	line-height: 1.7em;
+	border-bottom: 4px solid rgba(0,0,0,0.35);
 }
 .tag:hover{
 	top:-2px;

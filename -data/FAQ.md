@@ -27,11 +27,3 @@ Long story short: it's pretty freakin' arbitrary.
 **How do I get started making my own explorable?**
 
 You've already started! Browse this site for examples of explorables to inspire you. Check out the [tools](/tools) and [tutorials](/tutorials) pages, to learn how to make explorables. And if you want to get a deeper sense for *why* play matters so much to learning, check out the [further reading](/reading)!
-
-**I've got a question / a critique / a recommendation for an explorable to add to this site!**
-
-Great! Ping us at <script>
-		document.write(\"<n uers='rkcybenoyr.rkcynangvbaf@tznvy.pbz' ery='absbyybj'>rkcybenoyr.rkcynangvbaf@tznvy.pbz</n>\".replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<='Z'?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));
-		</script>
-
-We're all terrible at email, but we'll try to check it as much as our respective work schedules allow! Hey, I warned you about us being a disorganized "movement".
