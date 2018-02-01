@@ -268,6 +268,9 @@ var _csvToJSON = function(csv){
 	for(var i=1; i<lines.length; i++){ // skip first line, it's the header
 		var line = lines[i];
 
+		// NO
+		if(line=="") continue;
+
 		// Get props
 		var props = line.split('\",\"');
 		props[0] = props[0].slice(1); // remove quotes
