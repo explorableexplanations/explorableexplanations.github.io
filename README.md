@@ -1,6 +1,6 @@
 # Explorable Explanations
 
-**"License":** Dedicated to the public domain, with Creative Commons Zero.
+**"License":** Dedicated to the public domain, with Creative Commons Zero
 
 **Designed & developed by [Nicky Case!](https://www.patreon.com/ncase)**
 
