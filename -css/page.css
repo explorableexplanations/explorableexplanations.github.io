@@ -25,7 +25,7 @@ body{
 	color:#222222;
 	margin: 0;
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
-	font-size: 24px;
+	font-size: 22px;
 	line-height: 1.5em;
 	font-weight: 100;
 }
@@ -35,7 +35,7 @@ b, strong{
 
 @media (max-width: 641px){
 	body{
-		font-size: 40px;
+		font-size: 30px;
 	}
 	#intro, #footer_nav_container{
 		text-align: left !important;
@@ -266,6 +266,9 @@ b, strong{
 .footer_buttons{
 	text-align:center;
 	padding-bottom: 1em;
+
+	margin-top: -0.5em;
+    margin-bottom: -0.5em;
 }
 .tag{
 	position: relative;
