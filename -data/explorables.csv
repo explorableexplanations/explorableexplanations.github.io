@@ -6,7 +6,7 @@
 "dat.gui","a tool for making interfaces to modify variables in real-time","https://workshop.chromeexperiments.com/examples/gui/#1--Basic-Usage","datgui.png","tools","",""
 "The Evolution of Trust","a game about the game theory of social trust & cooperation","http://ncase.me/trust/","trust.png","social","yes","Nicky Case"
 "The New Science of Sentencing","play with algorithms that (try to) predict crime","https://www.themarshallproject.org/2015/08/04/the-new-science-of-sentencing","sentencing.png","journalism","",""
-"Idyll","a language for making interactive documents on the web","https://idyll-lang.github.io/editor/","idyll.png","tools","yes",""
+"Idyll","a language for making interactive documents on the web","https://idyll-lang.org/","idyll.png","tools","yes",""
 "Earth: A Primer","an interactive textbook on earth science, for iPad","http://www.earthprimer.com/","earth.png","earth","yes","Chaim Gingold"
 "Introduction to A*","how to program pathfinding for your game","http://www.redblobgames.com/pathfinding/a-star/introduction.html","rbg_a_star.png","programming","yes","Amit Patel"
 "2D Visibility","how to create 2D light effects for your game","http://www.redblobgames.com/articles/visibility/","rbg_2d.png","programming","","Amit Patel"
