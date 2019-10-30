@@ -58,8 +58,7 @@
 
 		"splash": "boids/boids.html",
 		"gallery": {
-			"sort": "featured-first",
-			"count": 10
+			"sort": "featured-first"
 		}
 	},
 
