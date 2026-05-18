@@ -3,7 +3,7 @@
 	/////////////////////////////
 	// THE EXPLORABLE TAGS //////
 	/////////////////////////////
-	
+
 	{
 		"id": "philosophy",
 		"name": "philosophy",
@@ -13,13 +13,13 @@
 	{
 		"id": "math",
 		"name": "math",
-		"color": "hsl(220, 70%, 56%)",
+		"color": "hsl(220, 70%, 40%)",
 		"explorable": true
 	},
 	{
 		"id": "physics",
 		"name": "physics",
-		"color": "hsl(210, 53%, 70%)",
+		"color": "hsl(210, 53%, 40%)",
 		"explorable": true
 	},
 	{
@@ -31,31 +31,31 @@
 	{
 		"id": "biology",
 		"name": "biology",
-		"color": "hsl(90, 100%, 36%)",
+		"color": "hsl(120, 100%, 23%)",
 		"explorable": true
 	},
 	{
 		"id": "psychology",
 		"name": "psychology",
-		"color": "#FF69B4",
+		"color": "#BA07BA",
 		"explorable": true
 	},
 	{
 		"id": "social",
 		"name": "social science",
-		"color": "#FFA500",
+		"color": "#8F4A00",
 		"explorable": true
 	},
 	{
 		"id": "art",
 		"name": "art",
-		"color": "#ff4040",
+		"color": "#EA0006",
 		"explorable": true
 	},
 	{
 		"id": "civics",
 		"name": "civics",
-		"color": "#ffcc00",
+		"color": "#BD4200",
 		"explorable": true
 	},
 	{
@@ -73,13 +73,13 @@
 	{
 		"id": "programming",
 		"name": "programming",
-		"color": "#E91E63",
+		"color": "#C3134E",
 		"explorable": true
 	},
 	{
 		"id": "earth",
 		"name": "earth science",
-		"color": "#0dd4ba",
+		"color": "#054B4E",
 		"explorable": true
 	},
 	{
@@ -91,7 +91,7 @@
 	{
 		"id": "misc",
 		"name": "misc",
-		"color": "#aaa",
+		"color": "#4D4D4D",
 		"explorable": true
 	},
 
@@ -103,19 +103,19 @@
 	{
 		"id": "tools",
 		"name": "tools",
-		"color": "#ff4040",
+		"color": "#EA0006",
 		"explorable": false
 	},
 	{
 		"id": "tutorials",
 		"name": "tutorials",
-		"color": "hsl(90, 100%, 40%)",
+		"color": "hsl(130, 100%, 20%)",
 		"explorable": false
 	},
 	{
 		"id": "reading",
 		"name": "further reading",
-		"color": "hsl(220, 70%, 56%)",
+		"color": "hsl(220, 70%, 40%)",
 		"explorable": false
 	},
 	{
