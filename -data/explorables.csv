@@ -179,3 +179,4 @@
 "Making sense of COVID19 through simulations","","http://www.r2d3.us/covid-19/","covid_making_sense.png","biology","","Stephanie Yee, Tony Chu"
 "What Happens Next?","covid-19 futures explained, with playable simulations","https://ncase.me/covid-19/","covid_futures.png","biology","yes","Marcel Salathé, Nicky Case"
 "Marvin Minsky and The Ultimate TinkerToy","An essay on the legacy of Marvin Minsky with programmable interactive simulations","https://tinlizzie.org/tinkertoy/","ultimate-tinkertoy.png","biology,programming","","Alan Kay, John Maloney and Yoshiki Ohshima"
+"Hearts or circles: what the heck is a neural network?","train a real 1,363-parameter neural network in your browser by drawing, and watch backpropagation in slow motion","https://jcrueda.com/what-the-heck-is-a-neural-network/","hearts_or_circles.png","programming,math","","José Carlos Rueda"
